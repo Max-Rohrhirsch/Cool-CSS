@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            div {
+                width: 700px;
+                height: 400px;
+                margin: auto;
+                margin-top: 200px;
+                
+                position: sticky;
+                display: block;
+                top:0;
+                top: calc(var(--index) * 2em);
+            }
+            body{
+                min-height: 300vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color: blue;  --index: 1;"></div>
+        <div style="background-color: red;   --index: 2;"></div>
+        <div style="background-color: orange;--index: 3;"></div>
+        <div style="background-color: green; --index: 4;"></div>
+    </body>
+</html>

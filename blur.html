@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+<section>
+<!--    <img src="../pfadfinder%20onedrive/views/static/bilder/bg1.JPG">-->
+   <div class="box">
+        <h2>Focus</h2>
+    </div>
+    <div class="box">
+        <h2>Focus</h2>
+    </div>
+    <div class="circle">A</div>
+
+</section>
+
+
+
+
+
+<style>
+  
+    body {
+        margin: 0;
+    }
+    
+    section .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+                background: url(../pfadfinder%20onedrive/views/static/bilder/bg1.JPG)
+    }
+    section .box:nth-child(1){
+        filter: blur(10px);
+    }
+    section .box:nth-child(2){
+        clip-path: circle(150px at center);
+    }
+    section{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top:0;
+        left:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>

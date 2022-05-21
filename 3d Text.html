@@ -1,0 +1,33 @@
+<div class="box">
+    <span style="--i:1;">CSS is Awesome</span>
+    <span style="--i:2;">CSS is Awesome</span>
+    <span style="--i:3;">CSS is Awesome</span>
+    <span style="--i:4;">CSS is Awesome</span>
+    <span style="--i:5;">CSS is Awesome</span>
+    <span style="--i:6;">CSS is Awesome</span>
+    <span style="--i:7;">CSS is Awesome</span>
+    <span style="--i:8;">CSS is Awesome</span>
+</div>
+
+<style>
+    .box{
+        perspective: 10000px;
+        transform-style: preserve-3d;
+        transform: rotateY(40deg);
+        font-size: 80px;
+        animation: anim 7s linear infinite;
+        margin-top: 50vh
+    }
+    
+    @keyframes anim{
+        from {transform:  rotateX(0deg) rotateY(40deg);}
+        to {transform:  rotateX(360deg) rotateY(40deg);}
+    }
+    span{
+        position:absolute;
+
+        transform:   translate(-50%, -50%) rotateX(calc(var(--i) * -45deg)) translateZ(100px);
+        left: 50vw;
+        top: 60;
+    }
+</style>

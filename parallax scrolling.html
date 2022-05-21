@@ -1,0 +1,30 @@
+<div></div>
+<h2>Das auch nicht</h2>
+<h1 id="text">Hallo</h1>
+<h2> Das soll sich nicht bewgen</h2>
+
+
+<style>
+    body {
+        min-height: 200vh;
+        position: absolute;
+        display: inline-block;
+        
+    }
+    div {
+        height: 400px;
+    }
+    h1 {
+        position: absolute;
+    }
+</style>
+<script>
+    let text = document.getElementById('text');
+    
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        
+        text.style.top = 100 + value * -0.8 + '%';
+        
+    })
+</script>
